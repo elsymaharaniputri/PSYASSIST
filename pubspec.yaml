@@ -1,0 +1,43 @@
+name: psyassist
+description: "A PHYSICAL FIRST AID Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  flutter_launcher_icons: ^0.13.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo/logo.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/logo/
+    - assets/images/home/
+    - assets/images/bencana/
+    - assets/images/screen/
+    - assets/images/pfa/
+    - assets/images/mendengar/
+    - assets/images/stabilisasi/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/poppins_bold.ttf
+        - asset: assets/fonts/poppins_semibold.ttf
+        - asset: assets/fonts/poppins_medium.ttf
+        - asset: assets/fonts/poppins_regular.ttf

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:psyassist/pages/home.dart';
 import 'package:psyassist/theme.dart';
+import 'home.dart';
 
 class Screen extends StatefulWidget {
   const Screen({super.key});
@@ -52,23 +54,24 @@ class _ScreenState extends State<Screen> {
 
             //BUTTON
             Container(
-              width:
-                  100.0, // Mengatur panjang tombol menjadi 50% dari lebar layar
+              alignment: Alignment.centerLeft,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 12.0),
+                  padding:
+                      EdgeInsets.symmetric(vertical: 20.0, horizontal: 55.0),
                   backgroundColor: bg_orange,
                 ),
-                onPressed: () {},
-                child: Text(
-                  "Get Started",
-                  style: medium.copyWith(color: Colors.white),
-                ),
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => Home()));
+                },
+                child:
+                    Text("Get Started", style: xmedium.copyWith(color: white)),
               ),
-            )
+            ),
           ],
         ),
       ),

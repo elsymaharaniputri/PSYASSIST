@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.6
+  accordion: ^2.6.0
   flutter_launcher_icons: ^0.13.1
 
 dev_dependencies:
@@ -33,6 +34,7 @@ flutter:
     - assets/images/pfa/
     - assets/images/mendengar/
     - assets/images/stabilisasi/
+    - assets/images/mendengar/p.png
 
   fonts:
     - family: Poppins
